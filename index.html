@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width">
     <title>Pixel Art Maker!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <!-- need this line to load font: Monoton from static.popoway.me -->
+    <link rel="stylesheet" href="https://static.popoway.me/fonts/monoton/monoton.min.css">
     <link rel="stylesheet" href="styles.css">
+    <!-- need this line to load jQuery from static.popoway.me -->
+    <script src="https://static.popoway.me/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <h1>Lab: Pixel Art Maker</h1>
@@ -13,8 +18,8 @@
         Grid Height:
         <input type="number" id="inputHeight" name="height" min="1" value="1">
         Grid Width:
-        <input type="number" id="inputWeight" name="width" min="1" value="1">
-        <input type="submit">
+        <input type="number" id="inputWidth" name="width" min="1" value="1">
+        <input type="submit" id="inputSubmit">
     </form>
 
     <h2>Pick A Color</h2>
@@ -22,7 +27,10 @@
 
     <h2>Design Canvas</h2>
     <table id="pixelCanvas"></table>
-
-    <script src="designs.js"></script>
+    <div>
+      <p>Made with <3 by popoway</p>
+      <p><a href="https://github.com/popoway/project-pixel-art-maker-starter">GitHub</a></p>
+    </div>
+    <script src="designs.js" defer></script>
 </body>
 </html>

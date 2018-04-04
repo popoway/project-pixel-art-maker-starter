@@ -1,6 +1,9 @@
 body {
     text-align: center;
 }
+div {
+    padding: 50px;
+}
 
 h1 {
     font-family: Monoton;
